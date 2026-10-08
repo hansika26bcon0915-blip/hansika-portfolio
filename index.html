@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Hansika Chauhan, a First-Year B.Tech CSE Core Student at JECRC University, Jaipur and aspiring software developer." />
+  <meta name="keywords" content="Hansika Chauhan, Portfolio, B.Tech CSE Core, JECRC University, Aspiring Software Developer, C, HTML, CSS, JavaScript, Web Development, AI Tools, Problem Solving" />
+  <meta name="author" content="Hansika Chauhan" />
+  <title>Hansika Chauhan | First-Year B.Tech CSE Core Student | Aspiring Software Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Hansika Chauhan Home">
+        <span class="logo-bracket">&lt;</span>Hansika<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action buttons: Theme Toggle & Mobile Menu Button -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-outline header-cta">Connect</a>
+
+        <button id="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Seeking 1st Internship Opportunity</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Hansika Chauhan</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">I am a </span>
+            <span id="typewriter-text" class="typewriter-text"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            First-year B.Tech CSE Core student at JECRC University with a strong academic foundation and a passion for coding, web development, and AI tools. Eager to learn, build practical projects, and gain real-world internship experience.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/hansika-chauhan-08b524413/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:hansikachauhan1201@gmail.com" class="social-link" aria-label="Send Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-backdrop-glow"></div>
+            <div class="avatar-card">
+              <div class="avatar-image-container">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Hansika Chauhan - B.Tech CSE Core Student" class="avatar-img" />
+              </div>
+
+              <!-- Floating Badges -->
+              <div class="floating-badge badge-top">
+                <div class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="badge-text">
+                  <span class="badge-title">B.Tech CSE Core</span>
+                  <span class="badge-subtitle">JECRC University</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom">
+                <div class="badge-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="badge-text">
+                  <span class="badge-title">Aspiring Developer</span>
+                  <span class="badge-subtitle">Open to Internships</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="container hero-metrics-container">
+        <div class="metric-card">
+          <span class="metric-num">1st Year</span>
+          <span class="metric-label">B.Tech CSE Core (JECRC)</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">93.4%</span>
+          <span class="metric-label">Class 10th (APS Hempur)</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">87.6%</span>
+          <span class="metric-label">Class 12th (APS Hempur)</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">Actively</span>
+          <span class="metric-label">Seeking 1st Internship</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Aspiring Software Developer</h2>
+          <p class="section-subtitle">Dedicated student focused on building strong programming fundamentals and practical web projects.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-column">
+            <div class="about-card-featured">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80" alt="Student learning and writing code" class="about-card-img" />
+              <div class="experience-pill">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>JECRC University, Jaipur (First Year)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text-column">
+            <h3>Building Strong Foundations in Computer Science</h3>
+            <p class="about-bio">
+              I am a first-year B.Tech CSE Core student at JECRC University with a strong academic foundation and a growing interest in software and web development. I am currently building my programming fundamentals, working on web projects, and exploring AI tools. I am eager to learn, work on real-world projects and gain my first internship experience.
+            </p>
+
+            <!-- Career Goal Card -->
+            <div class="career-goal-card">
+              <div class="goal-icon">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <div class="goal-content">
+                <span class="goal-label">Career Goal</span>
+                <p class="goal-text">To grow as a software developer by strengthening my programming fundamentals, building practical projects and gaining real-world industry experience.</p>
+              </div>
+            </div>
+
+            <!-- Internship Status Banner -->
+            <div class="internship-status-banner">
+              <div class="status-badge-icon">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div class="status-text">
+                <span class="status-tag">Internship Status</span>
+                <p>Currently seeking my first internship opportunity in software development and web development.</p>
+              </div>
+            </div>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>First-year B.Tech in CSE Core at JECRC University, Jaipur</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Consistent academic record: 93.4% in Class 10 and 87.6% in Class 12 from APS Hempur</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Hands-on skills in C, HTML, CSS, JavaScript, Git & GitHub, AI tools, and Problem Solving</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Committed to continuous learning, building practical projects, and team collaboration</span>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="#contact" class="btn btn-primary">
+                <span>Contact Me</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </a>
+              <a href="#education" class="btn btn-outline">
+                <span>View Education</span>
+                <i class="fa-solid fa-graduation-cap"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Toolkit</span>
+          <h2 class="section-title">Skills & Knowledge</h2>
+          <p class="section-subtitle">Technical skills and developer tools I have learned and actively use to build projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Core Programming -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+              <h4>Programming</h4>
+            </div>
+            <ul class="skills-badge-list">
+              <li class="skill-badge"><i class="fa-solid fa-terminal"></i> C</li>
+              <li class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</li>
+              <li class="skill-badge"><i class="fa-solid fa-brain"></i> Problem Solving</li>
+              <li class="skill-badge"><i class="fa-solid fa-cubes"></i> Core CS Concepts</li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-brands fa-html5"></i></div>
+              <h4>Web Development</h4>
+            </div>
+            <ul class="skills-badge-list">
+              <li class="skill-badge"><i class="fa-brands fa-html5"></i> HTML</li>
+              <li class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS</li>
+              <li class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</li>
+              <li class="skill-badge"><i class="fa-solid fa-laptop-code"></i> Web Development</li>
+              <li class="skill-badge"><i class="fa-solid fa-mobile-screen"></i> Responsive Design</li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Version Control & Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-brands fa-git-alt"></i></div>
+              <h4>Tools & Platforms</h4>
+            </div>
+            <ul class="skills-badge-list">
+              <li class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</li>
+              <li class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</li>
+              <li class="skill-badge"><i class="fa-solid fa-code-compare"></i> Git & GitHub</li>
+              <li class="skill-badge"><i class="fa-solid fa-laptop-code"></i> VS Code</li>
+            </ul>
+          </div>
+
+          <!-- Category 4: AI & Modern Technologies -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h4>AI & Exploration</h4>
+            </div>
+            <ul class="skills-badge-list">
+              <li class="skill-badge"><i class="fa-solid fa-robot"></i> AI Tools</li>
+              <li class="skill-badge"><i class="fa-solid fa-lightbulb"></i> Problem Solving</li>
+              <li class="skill-badge"><i class="fa-solid fa-compass"></i> Tech Exploration</li>
+              <li class="skill-badge"><i class="fa-solid fa-arrows-rotate"></i> Continuous Learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">Practical applications and projects created to strengthen my programming and web development capabilities.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters" role="tablist" aria-label="Project categories">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1: Portfolio Website -->
+          <article class="project-card" data-category="web">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=700&q=80" alt="Portfolio Website Project" />
+              <div class="project-overlay">
+                <a href="#hero" class="overlay-icon-btn" title="View Current Website" aria-label="View Current Website">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-icon-btn" title="GitHub" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category-tag">Web Development</span>
+                <span class="project-featured-tag"><i class="fa-solid fa-star"></i> Featured</span>
+              </div>
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-desc">
+                A personal portfolio website built to showcase my skills, projects, education and learning journey. Features responsive layouts, dark/light theme toggle, and smooth interactive navigation.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Responsive Design</span>
+              </div>
+              <div class="project-footer">
+                <a href="#hero" class="project-link">
+                  <span>Live Preview</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-code">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Web Application -->
+          <article class="project-card" data-category="web">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="Web Application Project" />
+              <div class="project-overlay">
+                <a href="#contact" class="overlay-icon-btn" title="Project Inquiry" aria-label="Project Inquiry">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-icon-btn" title="GitHub" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-category-tag">Web Development</span>
+              </div>
+              <h3 class="project-title">Web Application</h3>
+              <p class="project-desc">
+                A web application project created to practice web development, UI design and problem-solving. Built with clean structure, interactive components, and responsive styling.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Problem Solving</span>
+              </div>
+              <div class="project-footer">
+                <a href="#contact" class="project-link">
+                  <span>Contact for Demo</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-code">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section experience-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Journey</h2>
+          <p class="section-subtitle">My academic history, current university coursework, and internship aspirations.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1: B.Tech -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">First Year, 2026–Present</span>
+              <h3 class="timeline-role">B.Tech CSE Core</h3>
+              <h4 class="timeline-company">JECRC University, Jaipur</h4>
+              <p class="timeline-desc">
+                Currently pursuing first-year B.Tech in Computer Science and Engineering (CSE Core). Strengthening programming fundamentals in C, data structures, algorithms, and modern web development technologies.
+              </p>
+              <div class="timeline-tags">
+                <span>B.Tech CSE Core</span>
+                <span>JECRC University</span>
+                <span>C Language</span>
+                <span>First Year</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Internship Focus -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Current Focus</span>
+              <h3 class="timeline-role">Internship Aspirant</h3>
+              <h4 class="timeline-company">Software Development & Web Development</h4>
+              <p class="timeline-desc">
+                Currently seeking my first internship opportunity in software development and web development. Enthusiastic to apply my programming skills, learn from engineering mentors, and contribute to innovative software solutions.
+              </p>
+              <div class="timeline-tags">
+                <span>Internship Aspirant</span>
+                <span>Quick Learner</span>
+                <span>Adaptable</span>
+                <span>Enthusiastic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Class 12 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Senior Secondary</span>
+              <h3 class="timeline-role">Class 12 — 87.6%</h3>
+              <h4 class="timeline-company">APS Hempur</h4>
+              <p class="timeline-desc">
+                Completed Class 12 senior secondary education with 87.6% aggregate percentage, building strong analytical, mathematical, and scientific fundamentals.
+              </p>
+              <div class="timeline-tags">
+                <span>Percentage: 87.6%</span>
+                <span>APS Hempur</span>
+                <span>Class 12</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: Class 10 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Secondary School</span>
+              <h3 class="timeline-role">Class 10 — 93.4%</h3>
+              <h4 class="timeline-company">APS Hempur</h4>
+              <p class="timeline-desc">
+                Graduated Class 10 secondary school examination with 93.4% distinction, demonstrating consistent academic dedication and discipline.
+              </p>
+              <div class="timeline-tags">
+                <span>Percentage: 93.4%</span>
+                <span>Distinction</span>
+                <span>APS Hempur</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in offering an internship, collaborating on a project, or discussing opportunities? Feel free to reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-column">
+            <h3>Let's connect and discuss opportunities</h3>
+            <p>
+              I am actively seeking my first internship opportunity in software development and web development. Feel free to contact me via email, phone, or LinkedIn!
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-text">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:hansikachauhan1201@gmail.com" class="contact-value">hansikachauhan1201@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-text">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+917900643902" class="contact-value">+91 7900643902</a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-text">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Uttarakhand, India</span>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="contact-text">
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/hansika-chauhan-08b524413/" target="_blank" rel="noopener noreferrer" class="contact-value">hansika-chauhan-08b524413</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Card -->
+            <div class="social-connect-card">
+              <h4>Professional Profiles</h4>
+              <div class="social-links-footer">
+                <a href="https://www.linkedin.com/in/hansika-chauhan-08b524413/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-column">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-header">
+                <h4>Send a Message</h4>
+                <p>Fill out the form below and I will respond to your message promptly.</p>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Smith" required />
+                  </div>
+                  <span class="error-message" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required />
+                  </div>
+                  <span class="error-message" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="Internship Opportunity / Inquiry" required />
+                </div>
+                <span class="error-message" id="subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Your message here..." required></textarea>
+                </div>
+                <span class="error-message" id="message-error"></span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+
+            <!-- Success Alert Notification (Toast/Card) -->
+            <div id="form-toast" class="form-toast" role="alert" aria-live="polite">
+              <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="toast-body">
+                <strong class="toast-title">Message Sent!</strong>
+                <p class="toast-msg">Thank you for reaching out, Hansika will respond to your message shortly.</p>
+              </div>
+              <button type="button" class="toast-close" id="toast-close-btn" aria-label="Close message">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-bracket">&lt;</span>Hansika<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">First-Year B.Tech CSE Core Student at JECRC University & Aspiring Software Developer.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h5>Connect</h5>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/in/hansika-chauhan-08b524413/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="mailto:hansikachauhan1201@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">Hansika Chauhan &copy; <span id="current-year">2026</span>. All rights reserved.</p>
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+          <i class="fa-solid fa-chevron-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
